@@ -1,0 +1,128 @@
+@media print {
+
+    /* body *,
+    .horizontal-nav-container * {
+        display: none;
+        visibility: hidden;
+    }
+    
+    #a5-section *,
+    .a5-document,
+    .a5-document *{
+        display: block;
+        visibility: visible;
+        position: relative;
+        padding: 0;
+        margin: 0;
+    }
+    #a5-section {
+        width: 148mm;
+        max-height: 210mm;
+        height: fit-content;
+        background-color: var(--color-white);
+        overflow: hidden;
+        padding: 0 2mm;
+        margin: 0;
+        top: 0;
+        box-shadow: none;
+    }  */
+
+    * {
+        /* background: transparent; */
+        color: #000;
+        box-shadow: none;
+        text-shadow: none;
+    }
+    .horizontal-nav-container *,
+    .left-nav *  {
+        display: none;
+        margin: 0;
+        padding: 0;
+        box-shadow: none;
+        border: none;
+
+    }
+    .a5-document *,
+    #a5-section *,
+    .a5-document-container * {
+        height: fit-content;
+        overflow:hidden;
+        box-shadow: none;
+    }
+    .report-body {
+        display: none;
+        position: relative;
+        top: 0;
+        
+    }
+    .a5-document {
+        padding: 0px 10px;
+        margin-top: 0px;
+    }
+    .comment {
+        width: 100%;
+        padding: 0px;
+    }
+    .comment h3{
+        width: 20%;
+    }
+    .patient-form input {
+        border-bottom: var(--color-black) 1px solid;
+        margin-left: 5px;
+        width: 78%;
+        margin-bottom: 8px;
+    }
+    
+    .report-body-right img {
+        width: 120px;
+        height: 100px;
+        padding: 10px 0;
+        
+    }
+    .report-body-left .input-fields:nth-child(1) p{
+        width: 45.2%;
+    }
+    .report-body-left .input-fields:nth-child(2) p{
+        width: 48%;
+    }
+    .report-body-left .input-fields:nth-child(3) p{
+        width: 78.5%;
+    }
+    .report-body-left .input-fields:nth-child(6) p{
+        width: 53%;
+    }
+    .report-body-left .input-fields:nth-child(8) p{
+        width: 48%;
+    }
+    .report-body-left .input-fields:nth-child(9) p{
+        width: 50%;
+    }
+    .report-body-left .input-fields:nth-child(11) p{
+        width: 45%;
+    }
+    
+    .test-title {
+        background-color: #ccc;
+    }
+    .sonograph-container textarea {
+        background-color: transparent;
+    }
+
+    .sonograph-comment-section h3{
+        width: 25%;
+    }
+    .a5-footer{
+        border: 1px solid #333;
+        padding: 5px;
+    }
+    .signature {
+        width: 65%;
+    }
+    .signature input {
+        width: 80%;
+    }
+    .tag-line {
+        width: 33%;
+    }
+} 
+
