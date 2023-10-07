@@ -22,12 +22,14 @@ textarea {
 
 :root {
     --color-danger: hsl(0, 95%, 65%);
+    --color-brand: rgb(202, 67, 67);
     --color-light: hsl(0, 0%, 96%);
     --color-secondary: hsl(252, 100%, 90%);
     --color-dark: hsl(252, 30%, 17%);
     --color-black: hsl(252, 30%, 10%);
     --shadow-color: #d2d2d2;
     --color-white: #ffffff;
+    --color-card: rgba(248, 248, 248, 0.685);
 }
 
 /* ============** UTILITY **=========== */
@@ -75,12 +77,15 @@ body{
 }
 
 .hori-left-section {
-    width: 5%;
+    width: 28%;
+}
+.right-nav {
+    width: 28%;
 }
 
 /* -------- TEXT SLIDER -------- */
 .text-slider {
-    width: 46%;
+    width: 44%;
     padding: 10px;
     background-color: var(--color-light);
     color: var(--color-white);
@@ -136,19 +141,17 @@ body{
     background-color: var(--color-light);
 }
 .hover-menu {
-    background-color: rgba(248, 248, 248, 0.685);
+    background-color: var(--color-card);
     box-shadow: 0px 0px 5px var(--color-danger);
     margin-right: -101%;
     margin-left: 101%;
-    /* padding-bottom: 40px; */
     position: absolute;
     top: 2px;
     width: 100%;
     border-radius: 10px;
-    /* max-height: 300px; */
-    /* overflow-y: scroll; */
     visibility: hidden;
 }
+
 .menu h3:hover + .hover-menu,
 .hover-menu:hover,
 .menu h3 {
@@ -295,6 +298,7 @@ textarea {
 }
 .input-fields input {
     border-bottom: 1px solid #333;
+    text-align: end;
 }
 .report-body-left .input-fields:nth-child(1) p{
     width: 42.2%;
@@ -309,7 +313,7 @@ textarea {
     width: 53%;
 }
 .report-body-left .input-fields:nth-child(8) p{
-    width: 53%;
+    width: 42%;
 }
 .report-body-left .input-fields:nth-child(9) p{
     width: 53%;
@@ -330,7 +334,7 @@ textarea {
     width: 150px;
     height: 180px;
     padding: 10px 0;
-
+    
 }
 .report-body {
     display: none;
@@ -379,7 +383,7 @@ textarea {
 .a5-footer {
     margin-top: 8px;
     width: 100%;
-
+    
 }
 .signature {
     width: 69%;
@@ -389,4 +393,69 @@ textarea {
 }
 .tag-line {
     width: 31%;
+}
+
+/* FUNCTION CARD */
+
+.btn {
+    padding: 15px 60px;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 0px 0px 3px var(--color-danger);
+    color: var(--color-light);
+    background-color: var(--color-brand);
+}
+.btn:hover {
+    cursor: pointer;
+    /* scale: 0.8; */
+    box-shadow: 0px 0px 3px var(--color-danger);
+    color: var(--color-light);
+    background-color: var(--color-brand);
+    text-shadow: none;
+    transition: all 130ms ease-in;
+}
+.g-function-container {
+    width: 29%;
+    margin-top: 10px;
+    display: none;
+}
+.g-function {
+    flex-wrap: wrap;
+    width: 220px;
+    height: 320px;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: var(--color-card);
+    box-shadow: 0px 0px 5px var(--color-danger);
+    overflow-y: scroll;
+    position: sticky;
+    top: 10px;
+    /* display: none; */
+}
+.g-function::-webkit-scrollbar {
+    width: 0px;
+}
+.g-function p {
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 3px;
+    background-color: var(--color-white);
+    box-shadow: 0px 0px 5px var(--shadow-color);
+}
+.g-function p:nth-child(29),
+.g-function p:nth-child(30),
+.g-function p:nth-child(31) {
+    width: 100%;
+    text-align: center;
+}
+.g-function p:hover {
+    cursor: pointer;
+    scale: 0.9  ;
+    background-color: var(--color-brand);
+    color: var(--color-white);
+    transition: all 100ms ease-in;
+}
+.active {
+    color: var(--color-brand);
+    border: 1px solid var(--color-brand);
 }

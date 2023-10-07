@@ -1,46 +1,24 @@
 @media print {
 
-    /* body *,
-    .horizontal-nav-container * {
-        display: none;
-        visibility: hidden;
-    }
-    
-    #a5-section *,
-    .a5-document,
-    .a5-document *{
-        display: block;
-        visibility: visible;
-        position: relative;
-        padding: 0;
-        margin: 0;
-    }
-    #a5-section {
-        width: 148mm;
-        max-height: 210mm;
-        height: fit-content;
-        background-color: var(--color-white);
-        overflow: hidden;
-        padding: 0 2mm;
-        margin: 0;
-        top: 0;
-        box-shadow: none;
-    }  */
 
-    * {
+    *,
+    body * {
         /* background: transparent; */
         color: #000;
         box-shadow: none;
         text-shadow: none;
+        background: white;
+        border-color: white;
     }
     .horizontal-nav-container *,
-    .left-nav *  {
+    .left-nav *,
+    .right-nav *,
+    .g-function-container * {
         display: none;
         margin: 0;
         padding: 0;
         box-shadow: none;
-        border: none;
-
+        border-color: transparent;
     }
     .a5-document *,
     #a5-section *,
